@@ -1,0 +1,264 @@
+/* common css start */
+:root{
+    --highlight-color: #8484bf;
+    --primary-color: #0f2f44;
+    --light-color: #fefefe;
+    --hover-color: #ffc712;
+    --icon-color: #999999;
+    --text-color: #444444;
+    --border-color: #dedede;
+    --hover-background: #fff9e6;
+    --button-color: #ffffff;
+    --heading-font: "Abril Fatface", serif;
+    --secondary-font: "Ubuntu", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: o;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    font-family: "Ubuntu", sans-serif;
+    text-decoration: none;     
+}
+a{
+    text-decoration: none;
+}
+body {
+    font-family: var(--body-font);
+}
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: var(--secondary-font);
+}
+.container{
+    width:1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-50{
+    width: 50%;
+}
+.w-33{
+    width: celc(100% / 3);
+}
+.test- left{
+    text-align: left;
+}
+.test- right{
+    text-align: right;
+}
+.test- center{
+    text-align: center;
+}
+.test- justify{
+    text-align: justify;
+}
+.align- center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+/* common css end */
+/* top bar Section css start */
+#top_bar{
+    background-color: var(--primary-color);
+    color:var(--light-color)
+}
+#top_bar.row{
+    font-size: 16px;
+    padding:12px;
+}
+/* top bar Section css end */
+/* nav bar Section css start */
+#nav .row{
+    align-items: center;
+    height: 95px;
+}
+ #nav li a{
+    padding:0 19px;
+    font-weight: 500;
+    color:var(--text-color);
+    transition: 0.3s;
+}
+#nav li a:hover{
+    background-color:var(--hover-background);
+    padding:30px 10px;
+    color:var(--hover-color);
+}
+#nav ul li button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    color: var(--icon-color);
+    margin-left: 20px;
+    background-color: transparent;
+    transform: 0.3;
+}
+#nav ul li button :hover{
+    background-color:var(--hover-background);
+    color:var(--hover-color);
+
+}
+/* nav bar Section css end */
+/* banner Section  start */
+#banner{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+#banner h2{ 
+   font-size: 50px;
+   color: var(--primary-color);
+   line-height: 20px;
+}
+#banner h1{
+    font-weight: 400;
+    color: var(--primary-color);
+    font-size: 80px;
+}
+#banner h4{
+    line-height: 20px;
+    font-weight: 400;
+    font-size:32px;
+    letter-spacing: 18px;
+    color: var(--highlight-color); 
+}
+#banner .banner_info p{
+    width:500px;
+    font-size: 14px;
+    line-height: 24px;
+    color:var(--text-color);
+    margin:30px 0;
+}
+#banner a {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--light-color);
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 12px 21px;
+    border-radius: 8px;
+}
+#banner a:hover{
+    background-color: var(--light-color);
+    color: var(--highlight-color);
+    transition: 0.3s;
+}
+#banner button{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    border: none;
+    color: var(--highlight-color);
+    font-size: 18px;
+    margin-left: 20px;
+}
+#banner button :hover{
+    background-color: var(--highlight-color);
+    color: var(--light-color);
+    transition: 0.3s;
+}
+/* banner Section  end */
+/* about Section  start */
+#about_us .inner_container h4{
+    font-size: 14px;
+    margin-top: 70px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+#about_us.inner_container h2{
+    font-size:32px;
+    line-height: 5px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+#about_us.inner_container p{
+    font-size: 20x;
+    line-height: 20px;
+    color: var(--text-color);
+    margin-top: 30PX;
+}
+#about_us ul li{
+    font-size: 15px;
+    color: var(--about-color);
+    margin: 20px 20px;
+}
+#about_us .new_btn a{
+    color:var(--about-color);
+    background-color: var(--hover-color);
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 10px;
+    margin-left: 26px;
+    box-shadow: 10px 10px 8px var(--text-color);
+    transition: 0.4s;
+    display: inline-block;
+}
+#about_us .new_btn a:hover{
+    background-color: var(--hover-background-color);
+    color: var(--about-color);
+}
+#about_us .inner_container img{
+    margin-top: 50px;
+}
+/* about Section  end */
+/* our_skill Section  start */
+#our_skill .container{
+    padding-top: 100px;
+    display: flex;
+}
+.our_skill_info h4{
+    color:var(--text-color);
+    font-weight: 400;
+    text-align: end;
+    font-size: 14px;
+    line-height: auto;
+}
+.our_skill_info h3{
+    color:var(--primary-color);
+    text-align: end;
+    font-size: 32px;
+    line-height: auto;
+}
+.our_skill_info p{
+    color:var(--text-color);
+    text-align: end;
+    padding-top: 25px;
+}
+.our_skill_info img{
+    padding-left:20px;
+    padding-top:50px;
+    width: 100%;
+}
+/* our_skill Section  end */
+
+
+
+
+
+
